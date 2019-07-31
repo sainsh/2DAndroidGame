@@ -6,13 +6,13 @@ public class GameObject {
 
     private Bitmap image;
 
-    private final int rowCount, colCount;
+    protected final int rowCount, colCount;
 
     private final int WIDTH, HEIGHT;
 
-    private final int width, height;
+    protected final int width, height;
 
-    private int x, y;
+    protected int x, y;
 
     public GameObject(Bitmap image, int rowCount, int colCount, int x, int y) {
         this.image = image;
@@ -29,7 +29,7 @@ public class GameObject {
     }
 
     //creates a smaller object from a spritesheet
-    private Bitmap createSubImageAt(int row, int col) {
+    protected Bitmap createSubImageAt(int row, int col) {
         Bitmap subImage = Bitmap.createBitmap(image, col * width, row * height, width, height);
         return subImage;
     }

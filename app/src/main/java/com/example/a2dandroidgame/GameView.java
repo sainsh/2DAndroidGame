@@ -27,4 +27,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
 
     }
+
+    public void update(){
+
+    }
 }
